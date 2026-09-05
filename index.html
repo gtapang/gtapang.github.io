@@ -253,6 +253,7 @@ tbody tr:hover td{background:var(--surface)}
 }
 .risk:last-child{border-bottom:1px solid var(--rule)}
 .risk dt{font-weight:600;font-size:15px}
+#work .risk dt{font-family:"IBM Plex Mono",monospace;font-weight:400;font-size:13px;color:var(--accent)}
 .risk dd{margin:0;color:var(--muted);font-size:14.5px;line-height:1.55}
 
 /* ---------- keywords ---------- */
@@ -440,7 +441,7 @@ footer{
       <span id="netstate">Drag a node to move it.</span>
     </p>
     <figure class="figwrap">
-      <svg id="net" viewBox="0 0 1400 1030" role="group" aria-label="Mentorship network: 21 members sized by membership class, the 43 specialization areas named in the members table, and the mentorship links centred on the program leader. Select any node to highlight what it connects to, or drag it to reposition it.">
+      <svg id="net" viewBox="0 0 1400 1030" role="group" aria-label="Mentorship network: 21 members sized by membership class, the specialization areas named in the members table, and the mentorship links centred on the program leader. Select any node to highlight what it connects to, or drag it to reposition it.">
         <g fill="none" stroke="var(--ink)" stroke-width="1.4" stroke-opacity=".34" stroke-linecap="round">
           <line class="net-edge net-mentor" data-e="p-0 p-8" x1="700" y1="515" x2="332.0" y2="515.0"></line>
           <line class="net-edge net-mentor" data-e="p-0 p-9" x1="700" y1="515" x2="402.3" y2="355.1"></line>
@@ -448,7 +449,7 @@ footer{
           <line class="net-edge net-mentor" data-e="p-0 p-11" x1="700" y1="515" x2="586.3" y2="256.3"></line>
           <line class="net-edge net-mentor" data-e="p-0 p-12" x1="700" y1="515" x2="402.3" y2="674.9"></line>
           <line class="net-edge net-mentor" data-e="p-0 p-13" x1="700" y1="515" x2="350.0" y2="599.1"></line>
-          <line class="net-edge net-mentor" data-e="p-0 p-14" x1="700" y1="515" x2="997.7" y2="674.9"></line>
+          <line class="net-edge net-mentor" data-e="p-0 p-14" x1="700" y1="515" x2="700.0" y2="787.0"></line>
           <line class="net-edge net-mentor" data-e="p-0 p-15" x1="700" y1="515" x2="1068.0" y2="515.0"></line>
           <line class="net-edge net-mentor" data-e="p-0 p-16" x1="700" y1="515" x2="916.3" y2="294.9"></line>
           <line class="net-edge net-mentor" data-e="p-0 p-17" x1="700" y1="515" x2="1050.0" y2="599.1"></line>
@@ -457,15 +458,15 @@ footer{
           <line class="net-edge net-mentor" data-e="p-0 p-2" x1="700" y1="515" x2="350.0" y2="430.9"></line>
           <line class="net-edge net-mentor" data-e="p-0 p-3" x1="700" y1="515" x2="586.3" y2="773.7"></line>
           <line class="net-edge net-mentor" data-e="p-0 p-4" x1="700" y1="515" x2="483.7" y2="735.1"></line>
-          <line class="net-edge net-mentor" data-e="p-0 p-5" x1="700" y1="515" x2="813.7" y2="773.7"></line>
-          <line class="net-edge net-mentor" data-e="p-0 p-6" x1="700" y1="515" x2="700.0" y2="787.0"></line>
-          <line class="net-edge net-mentor" data-e="p-0 p-7" x1="700" y1="515" x2="916.3" y2="735.1"></line>
+          <line class="net-edge net-mentor" data-e="p-0 p-5" x1="700" y1="515" x2="916.3" y2="735.1"></line>
+          <line class="net-edge net-mentor" data-e="p-0 p-6" x1="700" y1="515" x2="813.7" y2="773.7"></line>
+          <line class="net-edge net-mentor" data-e="p-0 p-7" x1="700" y1="515" x2="997.7" y2="674.9"></line>
           <line class="net-edge net-mentor" data-e="p-0 p-1" x1="700" y1="515" x2="700.0" y2="243.0"></line>
           <line class="net-edge net-mentor" data-e="p-1 p-20" x1="700.0" y1="243.0" x2="813.7" y2="256.3"></line>
         </g>
         <g fill="none" stroke="var(--accent-soft)" stroke-width="1" stroke-opacity=".5">
           <line class="net-edge" data-e="t-complex-systems p-0" x1="700" y1="515" x2="816.7" y2="424.5"></line>
-          <line class="net-edge" data-e="t-network-science p-0" x1="700" y1="515" x2="816.7" y2="605.5"></line>
+          <line class="net-edge" data-e="t-network-science p-0" x1="700" y1="515" x2="816.7" y2="602.9"></line>
           <line class="net-edge" data-e="t-data-science p-0" x1="700" y1="515" x2="583.3" y2="605.5"></line>
           <line class="net-edge" data-e="t-computational-modeling p-0" x1="700" y1="515" x2="583.3" y2="431.0"></line>
           <line class="net-edge shared" data-e="t-fmri p-1" x1="700.0" y1="243.0" x2="738.7" y2="331.5"></line>
@@ -478,18 +479,19 @@ footer{
           <line class="net-edge" data-e="t-destination-development p-2" x1="350.0" y1="430.9" x2="168.3" y2="436.3"></line>
           <line class="net-edge" data-e="t-tourism-master-planning p-2" x1="350.0" y1="430.9" x2="259.3" y2="383.1"></line>
           <line class="net-edge" data-e="t-smart-and-digital-tourism p-2" x1="350.0" y1="430.9" x2="291.8" y2="274.6"></line>
-          <line class="net-edge" data-e="t-zooarchaeology p-3" x1="586.3" y1="773.7" x2="549.9" y2="863.2"></line>
-          <line class="net-edge" data-e="t-bioacoustics p-4" x1="483.7" y1="735.1" x2="485.1" y2="826.2"></line>
+          <line class="net-edge shared" data-e="t-zooarchaeology p-3" x1="586.3" y1="773.7" x2="661.3" y2="695.4"></line>
+          <line class="net-edge shared" data-e="t-zooarchaeology p-14" x1="700.0" y1="787.0" x2="661.3" y2="695.4"></line>
+          <line class="net-edge" data-e="t-bioacoustics p-4" x1="483.7" y1="735.1" x2="485.1" y2="837.0"></line>
           <line class="net-edge" data-e="t-landscape-ecology p-4" x1="483.7" y1="735.1" x2="312.4" y2="799.8"></line>
-          <line class="net-edge shared" data-e="t-genomics p-5" x1="813.7" y1="773.7" x2="774.8" y2="679.5"></line>
-          <line class="net-edge shared" data-e="t-genomics p-6" x1="700.0" y1="787.0" x2="774.8" y2="679.5"></line>
-          <line class="net-edge shared" data-e="t-genomics p-7" x1="916.3" y1="735.1" x2="774.8" y2="679.5"></line>
-          <line class="net-edge" data-e="t-molecular-biology p-5" x1="813.7" y1="773.7" x2="850.1" y2="844.2"></line>
-          <line class="net-edge shared" data-e="t-bioinformatics p-5" x1="813.7" y1="773.7" x2="774.8" y2="726.9"></line>
-          <line class="net-edge shared" data-e="t-bioinformatics p-6" x1="700.0" y1="787.0" x2="774.8" y2="726.9"></line>
-          <line class="net-edge shared" data-e="t-bioinformatics p-7" x1="916.3" y1="735.1" x2="774.8" y2="726.9"></line>
-          <line class="net-edge" data-e="t-marine-science p-6" x1="700.0" y1="787.0" x2="782.2" y2="881.2"></line>
-          <line class="net-edge" data-e="t-biochemistry p-6" x1="700.0" y1="787.0" x2="611.6" y2="899.8"></line>
+          <line class="net-edge shared" data-e="t-genomics p-5" x1="916.3" y1="735.1" x2="842.3" y2="644.4"></line>
+          <line class="net-edge shared" data-e="t-genomics p-6" x1="813.7" y1="773.7" x2="842.3" y2="644.4"></line>
+          <line class="net-edge shared" data-e="t-genomics p-7" x1="997.7" y1="674.9" x2="842.3" y2="644.4"></line>
+          <line class="net-edge" data-e="t-molecular-biology p-5" x1="916.3" y1="735.1" x2="985.5" y2="800.6"></line>
+          <line class="net-edge shared" data-e="t-bioinformatics p-5" x1="916.3" y1="735.1" x2="842.3" y2="691.2"></line>
+          <line class="net-edge shared" data-e="t-bioinformatics p-6" x1="813.7" y1="773.7" x2="842.3" y2="691.2"></line>
+          <line class="net-edge shared" data-e="t-bioinformatics p-7" x1="997.7" y1="674.9" x2="842.3" y2="691.2"></line>
+          <line class="net-edge" data-e="t-marine-science p-6" x1="813.7" y1="773.7" x2="926.1" y2="837.6"></line>
+          <line class="net-edge" data-e="t-biochemistry p-6" x1="813.7" y1="773.7" x2="775.1" y2="901.5"></line>
           <line class="net-edge" data-e="t-tourism-analytics p-8" x1="332.0" y1="515.0" x2="228.2" y2="593.6"></line>
           <line class="net-edge" data-e="t-information-theory p-8" x1="332.0" y1="515.0" x2="177.4" y2="484.7"></line>
           <line class="net-edge" data-e="t-critical-data-studies p-8" x1="332.0" y1="515.0" x2="247.2" y2="432.1"></line>
@@ -504,14 +506,14 @@ footer{
           <line class="net-edge" data-e="t-knowledge-organization p-13" x1="350.0" y1="599.1" x2="286.9" y2="703.1"></line>
           <line class="net-edge" data-e="t-bibliometrics p-13" x1="350.0" y1="599.1" x2="203.0" y2="630.6"></line>
           <line class="net-edge" data-e="t-topic-modeling p-13" x1="350.0" y1="599.1" x2="215.6" y2="521.0"></line>
-          <line class="net-edge" data-e="t-cancer-genomics p-14" x1="997.7" y1="674.9" x2="1135.6" y2="674.4"></line>
-          <line class="net-edge" data-e="t-plco-datasets p-14" x1="997.7" y1="674.9" x2="1064.7" y2="791.6"></line>
+          <line class="net-edge" data-e="t-cancer-genomics p-14" x1="700.0" y1="787.0" x2="782.2" y2="864.5"></line>
+          <line class="net-edge" data-e="t-plco-datasets p-14" x1="700.0" y1="787.0" x2="611.6" y2="895.7"></line>
           <line class="net-edge" data-e="t-educational-datasets p-15" x1="1068.0" y1="515.0" x2="1178.8" y2="454.3"></line>
           <line class="net-edge" data-e="t-dithering-and-ml p-15" x1="1068.0" y1="515.0" x2="1215.0" y2="580.3"></line>
           <line class="net-edge" data-e="t-ml-for-breast-cancer-nac-response p-16" x1="916.3" y1="294.9" x2="883.9" y2="182.7"></line>
           <line class="net-edge" data-e="t-word-networks p-16" x1="916.3" y1="294.9" x2="1007.2" y2="202.5"></line>
           <line class="net-edge" data-e="t-tda p-16" x1="916.3" y1="294.9" x2="1070.8" y2="275.0"></line>
-          <line class="net-edge" data-e="t-sports-data-science p-17" x1="1050.0" y1="599.1" x2="1162.0" y2="625.4"></line>
+          <line class="net-edge" data-e="t-sports-data-science p-17" x1="1050.0" y1="599.1" x2="1162.0" y2="625.9"></line>
           <line class="net-edge" data-e="t-transport-networks p-18" x1="997.7" y1="355.1" x2="1093.0" y2="312.0"></line>
           <line class="net-edge" data-e="t-software-networks p-19" x1="1050.0" y1="430.9" x2="1162.0" y2="404.1"></line>
         </g>
@@ -520,10 +522,10 @@ footer{
           <circle cx="816.7" cy="424.5" r="6.1" fill="var(--accent)"></circle>
           <text class="topic-label" x="816.7" y="444.6" text-anchor="middle"><tspan x="816.7" dy="0">Complex systems</tspan></text>
         </g>
-        <g data-x="816.7" data-y="605.5" data-r="6.1" data-hw="45.5" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-network-science" data-k="complex-systems computational-modeling data-science network-science" data-rel="t-network-science p-0" data-rows="r-0" data-msg="<b>network science</b> · 1 member · Tapang" tabindex="0" role="button" aria-label="network science, specialization area, 1 members">
-          <circle class="hitarea" cx="816.7" cy="605.5" r="19.1"></circle>
-          <circle cx="816.7" cy="605.5" r="6.1" fill="var(--accent)"></circle>
-          <text class="topic-label" x="816.7" y="625.6" text-anchor="middle"><tspan x="816.7" dy="0">network science</tspan></text>
+        <g data-x="816.7" data-y="602.9" data-r="6.1" data-hw="45.5" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-network-science" data-k="complex-systems computational-modeling data-science network-science" data-rel="t-network-science p-0" data-rows="r-0" data-msg="<b>network science</b> · 1 member · Tapang" tabindex="0" role="button" aria-label="network science, specialization area, 1 members">
+          <circle class="hitarea" cx="816.7" cy="602.9" r="19.1"></circle>
+          <circle cx="816.7" cy="602.9" r="6.1" fill="var(--accent)"></circle>
+          <text class="topic-label" x="816.7" y="623.0" text-anchor="middle"><tspan x="816.7" dy="0">network science</tspan></text>
         </g>
         <g data-x="583.3" data-y="605.5" data-r="6.1" data-hw="37.4" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-data-science" data-k="complex-systems computational-modeling data-science network-science" data-rel="t-data-science p-0" data-rows="r-0" data-msg="<b>data science</b> · 1 member · Tapang" tabindex="0" role="button" aria-label="data science, specialization area, 1 members">
           <circle class="hitarea" cx="583.3" cy="605.5" r="19.1"></circle>
@@ -575,45 +577,45 @@ footer{
           <circle cx="291.8" cy="274.6" r="6.1" fill="var(--accent)"></circle>
           <text class="topic-label" x="291.8" y="294.7" text-anchor="middle"><tspan x="291.8" dy="0">smart and</tspan><tspan x="291.8" dy="12">digital tourism</tspan></text>
         </g>
-        <g data-x="549.9" data-y="863.2" data-r="6.1" data-hw="42.8" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-zooarchaeology" data-k="bioacoustics" data-rel="t-zooarchaeology p-3" data-rows="r-3" data-msg="<b>Zooarchaeology</b> · 1 member · Rofes" tabindex="0" role="button" aria-label="Zooarchaeology, specialization area, 1 members">
-          <circle class="hitarea" cx="549.9" cy="863.2" r="19.1"></circle>
-          <circle cx="549.9" cy="863.2" r="6.1" fill="var(--accent)"></circle>
-          <text class="topic-label" x="549.9" y="883.3" text-anchor="middle"><tspan x="549.9" dy="0">Zooarchaeology</tspan></text>
+        <g data-x="661.3" data-y="695.4" data-r="8.7" data-hw="42.8" data-hh="17.7" data-oy="9.0" class="net-node net-topic shared" id="t-zooarchaeology" data-k="bioacoustics computational-biology data-science" data-rel="t-zooarchaeology p-3 p-14" data-rows="r-3 r-14" data-msg="<b>Zooarchaeology</b> · 2 members · Rofes, Baylon" tabindex="0" role="button" aria-label="Zooarchaeology, specialization area, 2 members">
+          <circle class="hitarea" cx="661.3" cy="695.4" r="21.7"></circle>
+          <circle cx="661.3" cy="695.4" r="8.7" fill="var(--accent)"></circle>
+          <text class="topic-label" x="661.3" y="718.1" text-anchor="middle"><tspan x="661.3" dy="0">Zooarchaeology</tspan></text>
         </g>
-        <g data-x="485.1" data-y="826.2" data-r="6.1" data-hw="37.4" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-bioacoustics" data-k="bioacoustics" data-rel="t-bioacoustics p-4" data-rows="r-4" data-msg="<b>Bioacoustics</b> · 1 member · Gan" tabindex="0" role="button" aria-label="Bioacoustics, specialization area, 1 members">
-          <circle class="hitarea" cx="485.1" cy="826.2" r="19.1"></circle>
-          <circle cx="485.1" cy="826.2" r="6.1" fill="var(--accent)"></circle>
-          <text class="topic-label" x="485.1" y="846.3" text-anchor="middle"><tspan x="485.1" dy="0">Bioacoustics</tspan></text>
+        <g data-x="485.1" data-y="837.0" data-r="6.1" data-hw="37.4" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-bioacoustics" data-k="bioacoustics" data-rel="t-bioacoustics p-4" data-rows="r-4" data-msg="<b>Bioacoustics</b> · 1 member · Gan" tabindex="0" role="button" aria-label="Bioacoustics, specialization area, 1 members">
+          <circle class="hitarea" cx="485.1" cy="837.0" r="19.1"></circle>
+          <circle cx="485.1" cy="837.0" r="6.1" fill="var(--accent)"></circle>
+          <text class="topic-label" x="485.1" y="857.1" text-anchor="middle"><tspan x="485.1" dy="0">Bioacoustics</tspan></text>
         </g>
         <g data-x="312.4" data-y="799.8" data-r="6.1" data-hw="50.9" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-landscape-ecology" data-k="bioacoustics" data-rel="t-landscape-ecology p-4" data-rows="r-4" data-msg="<b>landscape ecology</b> · 1 member · Gan" tabindex="0" role="button" aria-label="landscape ecology, specialization area, 1 members">
           <circle class="hitarea" cx="312.4" cy="799.8" r="19.1"></circle>
           <circle cx="312.4" cy="799.8" r="6.1" fill="var(--accent)"></circle>
           <text class="topic-label" x="312.4" y="819.9" text-anchor="middle"><tspan x="312.4" dy="0">landscape ecology</tspan></text>
         </g>
-        <g data-x="774.8" data-y="679.5" data-r="11.3" data-hw="26.6" data-hh="20.3" data-oy="9.0" class="net-node net-topic shared" id="t-genomics" data-k="computational-biology data-science" data-rel="t-genomics p-5 p-6 p-7" data-rows="r-5 r-6 r-7" data-msg="<b>Genomics</b> · 3 members · Bagamasbad, Yu, Saloma" tabindex="0" role="button" aria-label="Genomics, specialization area, 3 members">
-          <circle class="hitarea" cx="774.8" cy="679.5" r="24.3"></circle>
-          <circle cx="774.8" cy="679.5" r="11.3" fill="var(--accent)"></circle>
-          <text class="topic-label" x="774.8" y="704.8" text-anchor="middle"><tspan x="774.8" dy="0">Genomics</tspan></text>
+        <g data-x="842.3" data-y="644.4" data-r="11.3" data-hw="26.6" data-hh="20.3" data-oy="9.0" class="net-node net-topic shared" id="t-genomics" data-k="computational-biology data-science" data-rel="t-genomics p-5 p-6 p-7" data-rows="r-5 r-6 r-7" data-msg="<b>Genomics</b> · 3 members · Bagamasbad, Yu, Saloma" tabindex="0" role="button" aria-label="Genomics, specialization area, 3 members">
+          <circle class="hitarea" cx="842.3" cy="644.4" r="24.3"></circle>
+          <circle cx="842.3" cy="644.4" r="11.3" fill="var(--accent)"></circle>
+          <text class="topic-label" x="842.3" y="669.7" text-anchor="middle"><tspan x="842.3" dy="0">Genomics</tspan></text>
         </g>
-        <g data-x="850.1" data-y="844.2" data-r="6.1" data-hw="50.9" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-molecular-biology" data-k="computational-biology" data-rel="t-molecular-biology p-5" data-rows="r-5" data-msg="<b>molecular biology</b> · 1 member · Bagamasbad" tabindex="0" role="button" aria-label="molecular biology, specialization area, 1 members">
-          <circle class="hitarea" cx="850.1" cy="844.2" r="19.1"></circle>
-          <circle cx="850.1" cy="844.2" r="6.1" fill="var(--accent)"></circle>
-          <text class="topic-label" x="850.1" y="864.3" text-anchor="middle"><tspan x="850.1" dy="0">molecular biology</tspan></text>
+        <g data-x="985.5" data-y="800.6" data-r="6.1" data-hw="50.9" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-molecular-biology" data-k="computational-biology" data-rel="t-molecular-biology p-5" data-rows="r-5" data-msg="<b>molecular biology</b> · 1 member · Bagamasbad" tabindex="0" role="button" aria-label="molecular biology, specialization area, 1 members">
+          <circle class="hitarea" cx="985.5" cy="800.6" r="19.1"></circle>
+          <circle cx="985.5" cy="800.6" r="6.1" fill="var(--accent)"></circle>
+          <text class="topic-label" x="985.5" y="820.7" text-anchor="middle"><tspan x="985.5" dy="0">molecular biology</tspan></text>
         </g>
-        <g data-x="774.8" data-y="726.9" data-r="11.3" data-hw="42.8" data-hh="20.3" data-oy="9.0" class="net-node net-topic shared" id="t-bioinformatics" data-k="computational-biology data-science" data-rel="t-bioinformatics p-5 p-6 p-7" data-rows="r-5 r-6 r-7" data-msg="<b>Bioinformatics</b> · 3 members · Bagamasbad, Yu, Saloma" tabindex="0" role="button" aria-label="Bioinformatics, specialization area, 3 members">
-          <circle class="hitarea" cx="774.8" cy="726.9" r="24.3"></circle>
-          <circle cx="774.8" cy="726.9" r="11.3" fill="var(--accent)"></circle>
-          <text class="topic-label" x="774.8" y="752.2" text-anchor="middle"><tspan x="774.8" dy="0">Bioinformatics</tspan></text>
+        <g data-x="842.3" data-y="691.2" data-r="11.3" data-hw="42.8" data-hh="20.3" data-oy="9.0" class="net-node net-topic shared" id="t-bioinformatics" data-k="computational-biology data-science" data-rel="t-bioinformatics p-5 p-6 p-7" data-rows="r-5 r-6 r-7" data-msg="<b>Bioinformatics</b> · 3 members · Bagamasbad, Yu, Saloma" tabindex="0" role="button" aria-label="Bioinformatics, specialization area, 3 members">
+          <circle class="hitarea" cx="842.3" cy="691.2" r="24.3"></circle>
+          <circle cx="842.3" cy="691.2" r="11.3" fill="var(--accent)"></circle>
+          <text class="topic-label" x="842.3" y="716.5" text-anchor="middle"><tspan x="842.3" dy="0">Bioinformatics</tspan></text>
         </g>
-        <g data-x="782.2" data-y="881.2" data-r="6.1" data-hw="42.8" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-marine-science" data-k="computational-biology" data-rel="t-marine-science p-6" data-rows="r-6" data-msg="<b>Marine science</b> · 1 member · Yu" tabindex="0" role="button" aria-label="Marine science, specialization area, 1 members">
-          <circle class="hitarea" cx="782.2" cy="881.2" r="19.1"></circle>
-          <circle cx="782.2" cy="881.2" r="6.1" fill="var(--accent)"></circle>
-          <text class="topic-label" x="782.2" y="901.3" text-anchor="middle"><tspan x="782.2" dy="0">Marine science</tspan></text>
+        <g data-x="926.1" data-y="837.6" data-r="6.1" data-hw="42.8" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-marine-science" data-k="computational-biology" data-rel="t-marine-science p-6" data-rows="r-6" data-msg="<b>Marine science</b> · 1 member · Yu" tabindex="0" role="button" aria-label="Marine science, specialization area, 1 members">
+          <circle class="hitarea" cx="926.1" cy="837.6" r="19.1"></circle>
+          <circle cx="926.1" cy="837.6" r="6.1" fill="var(--accent)"></circle>
+          <text class="topic-label" x="926.1" y="857.7" text-anchor="middle"><tspan x="926.1" dy="0">Marine science</tspan></text>
         </g>
-        <g data-x="611.6" data-y="899.8" data-r="6.1" data-hw="37.4" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-biochemistry" data-k="computational-biology" data-rel="t-biochemistry p-6" data-rows="r-6" data-msg="<b>biochemistry</b> · 1 member · Yu" tabindex="0" role="button" aria-label="biochemistry, specialization area, 1 members">
-          <circle class="hitarea" cx="611.6" cy="899.8" r="19.1"></circle>
-          <circle cx="611.6" cy="899.8" r="6.1" fill="var(--accent)"></circle>
-          <text class="topic-label" x="611.6" y="919.9" text-anchor="middle"><tspan x="611.6" dy="0">biochemistry</tspan></text>
+        <g data-x="775.1" data-y="901.5" data-r="6.1" data-hw="37.4" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-biochemistry" data-k="computational-biology" data-rel="t-biochemistry p-6" data-rows="r-6" data-msg="<b>biochemistry</b> · 1 member · Yu" tabindex="0" role="button" aria-label="biochemistry, specialization area, 1 members">
+          <circle class="hitarea" cx="775.1" cy="901.5" r="19.1"></circle>
+          <circle cx="775.1" cy="901.5" r="6.1" fill="var(--accent)"></circle>
+          <text class="topic-label" x="775.1" y="921.6" text-anchor="middle"><tspan x="775.1" dy="0">biochemistry</tspan></text>
         </g>
         <g data-x="228.2" data-y="593.6" data-r="6.1" data-hw="50.9" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-tourism-analytics" data-k="knowledge-organization science-and-technology-policy tourism-analytics" data-rel="t-tourism-analytics p-8" data-rows="r-8" data-msg="<b>Tourism analytics</b> · 1 member · Dorado" tabindex="0" role="button" aria-label="Tourism analytics, specialization area, 1 members">
           <circle class="hitarea" cx="228.2" cy="593.6" r="19.1"></circle>
@@ -680,15 +682,15 @@ footer{
           <circle cx="215.6" cy="521.0" r="6.1" fill="var(--accent)"></circle>
           <text class="topic-label" x="215.6" y="541.1" text-anchor="middle"><tspan x="215.6" dy="0">topic modeling</tspan></text>
         </g>
-        <g data-x="1135.6" data-y="674.4" data-r="6.1" data-hw="45.5" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-cancer-genomics" data-k="computational-biology data-science" data-rel="t-cancer-genomics p-14" data-rows="r-14" data-msg="<b>Cancer genomics</b> · 1 member · Baylon" tabindex="0" role="button" aria-label="Cancer genomics, specialization area, 1 members">
-          <circle class="hitarea" cx="1135.6" cy="674.4" r="19.1"></circle>
-          <circle cx="1135.6" cy="674.4" r="6.1" fill="var(--accent)"></circle>
-          <text class="topic-label" x="1135.6" y="694.5" text-anchor="middle"><tspan x="1135.6" dy="0">Cancer genomics</tspan></text>
+        <g data-x="782.2" data-y="864.5" data-r="6.1" data-hw="45.5" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-cancer-genomics" data-k="computational-biology data-science" data-rel="t-cancer-genomics p-14" data-rows="r-14" data-msg="<b>Cancer genomics</b> · 1 member · Baylon" tabindex="0" role="button" aria-label="Cancer genomics, specialization area, 1 members">
+          <circle class="hitarea" cx="782.2" cy="864.5" r="19.1"></circle>
+          <circle cx="782.2" cy="864.5" r="6.1" fill="var(--accent)"></circle>
+          <text class="topic-label" x="782.2" y="884.6" text-anchor="middle"><tspan x="782.2" dy="0">Cancer genomics</tspan></text>
         </g>
-        <g data-x="1064.7" data-y="791.6" data-r="6.1" data-hw="40.1" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-plco-datasets" data-k="computational-biology data-science" data-rel="t-plco-datasets p-14" data-rows="r-14" data-msg="<b>PLCO datasets</b> · 1 member · Baylon" tabindex="0" role="button" aria-label="PLCO datasets, specialization area, 1 members">
-          <circle class="hitarea" cx="1064.7" cy="791.6" r="19.1"></circle>
-          <circle cx="1064.7" cy="791.6" r="6.1" fill="var(--accent)"></circle>
-          <text class="topic-label" x="1064.7" y="811.7" text-anchor="middle"><tspan x="1064.7" dy="0">PLCO datasets</tspan></text>
+        <g data-x="611.6" data-y="895.7" data-r="6.1" data-hw="40.1" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-plco-datasets" data-k="computational-biology data-science" data-rel="t-plco-datasets p-14" data-rows="r-14" data-msg="<b>PLCO datasets</b> · 1 member · Baylon" tabindex="0" role="button" aria-label="PLCO datasets, specialization area, 1 members">
+          <circle class="hitarea" cx="611.6" cy="895.7" r="19.1"></circle>
+          <circle cx="611.6" cy="895.7" r="6.1" fill="var(--accent)"></circle>
+          <text class="topic-label" x="611.6" y="915.8" text-anchor="middle"><tspan x="611.6" dy="0">PLCO datasets</tspan></text>
         </g>
         <g data-x="1178.8" data-y="454.3" data-r="6.1" data-hw="34.7" data-hh="21.1" data-oy="15.0" class="net-node net-topic" id="t-educational-datasets" data-k="artificial-intelligence data-science" data-rel="t-educational-datasets p-15" data-rows="r-15" data-msg="<b>Educational datasets</b> · 1 member · Kikuchi" tabindex="0" role="button" aria-label="Educational datasets, specialization area, 1 members">
           <circle class="hitarea" cx="1178.8" cy="454.3" r="19.1"></circle>
@@ -715,10 +717,10 @@ footer{
           <circle cx="1070.8" cy="275.0" r="6.1" fill="var(--accent)"></circle>
           <text class="topic-label" x="1070.8" y="295.1" text-anchor="middle"><tspan x="1070.8" dy="0">TDA</tspan></text>
         </g>
-        <g data-x="1162.0" data-y="625.4" data-r="6.1" data-hw="34.7" data-hh="21.1" data-oy="15.0" class="net-node net-topic" id="t-sports-data-science" data-k="data-science" data-rel="t-sports-data-science p-17" data-rows="r-17" data-msg="<b>Sports data science</b> · 1 member · Espanol" tabindex="0" role="button" aria-label="Sports data science, specialization area, 1 members">
-          <circle class="hitarea" cx="1162.0" cy="625.4" r="19.1"></circle>
-          <circle cx="1162.0" cy="625.4" r="6.1" fill="var(--accent)"></circle>
-          <text class="topic-label" x="1162.0" y="645.5" text-anchor="middle"><tspan x="1162.0" dy="0">Sports data</tspan><tspan x="1162.0" dy="12">science</tspan></text>
+        <g data-x="1162.0" data-y="625.9" data-r="6.1" data-hw="34.7" data-hh="21.1" data-oy="15.0" class="net-node net-topic" id="t-sports-data-science" data-k="data-science" data-rel="t-sports-data-science p-17" data-rows="r-17" data-msg="<b>Sports data science</b> · 1 member · Espanol" tabindex="0" role="button" aria-label="Sports data science, specialization area, 1 members">
+          <circle class="hitarea" cx="1162.0" cy="625.9" r="19.1"></circle>
+          <circle cx="1162.0" cy="625.9" r="6.1" fill="var(--accent)"></circle>
+          <text class="topic-label" x="1162.0" y="646.0" text-anchor="middle"><tspan x="1162.0" dy="0">Sports data</tspan><tspan x="1162.0" dy="12">science</tspan></text>
         </g>
         <g data-x="1093.0" data-y="312.0" data-r="6.1" data-hw="53.6" data-hh="15.1" data-oy="9.0" class="net-node net-topic" id="t-transport-networks" data-k="complex-systems network-science" data-rel="t-transport-networks p-18" data-rows="r-18" data-msg="<b>Transport networks</b> · 1 member · Cheng" tabindex="0" role="button" aria-label="Transport networks, specialization area, 1 members">
           <circle class="hitarea" cx="1093.0" cy="312.0" r="19.1"></circle>
@@ -745,7 +747,7 @@ footer{
           <circle class="person-f" cx="350.0" cy="430.9" r="8"></circle>
           <text class="person-label" x="350.0" y="413.9" text-anchor="middle">Badilla</text>
         </g>
-        <g data-x="586.3" data-y="773.7" data-r="8" data-hw="20.8" data-hh="17.5" data-oy="9.5" class="net-node net-person" id="p-3" data-k="bioacoustics" data-rel="p-3 t-zooarchaeology p-0" data-rows="r-0 r-3" data-msg="<b>Rofes, Juan</b> · affiliate member · 1 specialization · 1 mentorship link" tabindex="0" role="button" aria-label="Rofes, Juan, affiliate member, 1 specialization areas, 1 mentorship links">
+        <g data-x="586.3" data-y="773.7" data-r="8" data-hw="20.8" data-hh="17.5" data-oy="9.5" class="net-node net-person" id="p-3" data-k="bioacoustics" data-rel="p-3 t-zooarchaeology p-14 p-0" data-rows="r-0 r-3 r-14" data-msg="<b>Rofes, Juan</b> · affiliate member · 1 specialization · 1 mentorship link · shares a term with Baylon" tabindex="0" role="button" aria-label="Rofes, Juan, affiliate member, 1 specialization areas, 1 mentorship links">
           <circle class="hitarea" cx="586.3" cy="773.7" r="18"></circle>
           <circle class="person-f" cx="586.3" cy="773.7" r="8"></circle>
           <text class="person-label" x="586.3" y="796.7" text-anchor="middle">Rofes</text>
@@ -755,20 +757,20 @@ footer{
           <circle class="person-f" cx="483.7" cy="735.1" r="8"></circle>
           <text class="person-label" x="483.7" y="758.1" text-anchor="middle">Gan</text>
         </g>
-        <g data-x="813.7" data-y="773.7" data-r="8" data-hw="36.5" data-hh="17.5" data-oy="9.5" class="net-node net-person" id="p-5" data-k="computational-biology" data-rel="p-5 t-genomics t-molecular-biology t-bioinformatics p-6 p-7 p-0" data-rows="r-0 r-5 r-6 r-7" data-msg="<b>Bagamasbad, Pia</b> · affiliate member · 3 specializations · 1 mentorship link · shares a term with Yu, Saloma" tabindex="0" role="button" aria-label="Bagamasbad, Pia, affiliate member, 3 specialization areas, 1 mentorship links">
-          <circle class="hitarea" cx="813.7" cy="773.7" r="18"></circle>
-          <circle class="person-f" cx="813.7" cy="773.7" r="8"></circle>
-          <text class="person-label" x="813.7" y="796.7" text-anchor="middle">Bagamasbad</text>
-        </g>
-        <g data-x="700.0" data-y="787.0" data-r="8" data-hw="11.3" data-hh="17.5" data-oy="9.5" class="net-node net-person" id="p-6" data-k="computational-biology" data-rel="p-6 t-marine-science t-biochemistry t-genomics t-bioinformatics p-5 p-7 p-0" data-rows="r-0 r-5 r-6 r-7" data-msg="<b>Yu, Eizadora</b> · affiliate member · 4 specializations · 1 mentorship link · shares a term with Bagamasbad, Saloma" tabindex="0" role="button" aria-label="Yu, Eizadora, affiliate member, 4 specialization areas, 1 mentorship links">
-          <circle class="hitarea" cx="700.0" cy="787.0" r="18"></circle>
-          <circle class="person-f" cx="700.0" cy="787.0" r="8"></circle>
-          <text class="person-label" x="700.0" y="810.0" text-anchor="middle">Yu</text>
-        </g>
-        <g data-x="916.3" data-y="735.1" data-r="8" data-hw="23.9" data-hh="17.5" data-oy="9.5" class="net-node net-person" id="p-7" data-k="computational-biology data-science" data-rel="p-7 t-genomics t-bioinformatics p-5 p-6 p-0" data-rows="r-0 r-5 r-6 r-7" data-msg="<b>Saloma, Cynthia P.</b> · affiliate member · 2 specializations · 1 mentorship link · shares a term with Bagamasbad, Yu" tabindex="0" role="button" aria-label="Saloma, Cynthia P., affiliate member, 2 specialization areas, 1 mentorship links">
+        <g data-x="916.3" data-y="735.1" data-r="8" data-hw="36.5" data-hh="17.5" data-oy="9.5" class="net-node net-person" id="p-5" data-k="computational-biology" data-rel="p-5 t-genomics t-molecular-biology t-bioinformatics p-6 p-7 p-0" data-rows="r-0 r-5 r-6 r-7" data-msg="<b>Bagamasbad, Pia</b> · affiliate member · 3 specializations · 1 mentorship link · shares a term with Yu, Saloma" tabindex="0" role="button" aria-label="Bagamasbad, Pia, affiliate member, 3 specialization areas, 1 mentorship links">
           <circle class="hitarea" cx="916.3" cy="735.1" r="18"></circle>
           <circle class="person-f" cx="916.3" cy="735.1" r="8"></circle>
-          <text class="person-label" x="916.3" y="758.1" text-anchor="middle">Saloma</text>
+          <text class="person-label" x="916.3" y="758.1" text-anchor="middle">Bagamasbad</text>
+        </g>
+        <g data-x="813.7" data-y="773.7" data-r="8" data-hw="11.3" data-hh="17.5" data-oy="9.5" class="net-node net-person" id="p-6" data-k="computational-biology" data-rel="p-6 t-marine-science t-biochemistry t-genomics t-bioinformatics p-5 p-7 p-0" data-rows="r-0 r-5 r-6 r-7" data-msg="<b>Yu, Eizadora</b> · affiliate member · 4 specializations · 1 mentorship link · shares a term with Bagamasbad, Saloma" tabindex="0" role="button" aria-label="Yu, Eizadora, affiliate member, 4 specialization areas, 1 mentorship links">
+          <circle class="hitarea" cx="813.7" cy="773.7" r="18"></circle>
+          <circle class="person-f" cx="813.7" cy="773.7" r="8"></circle>
+          <text class="person-label" x="813.7" y="796.7" text-anchor="middle">Yu</text>
+        </g>
+        <g data-x="997.7" data-y="674.9" data-r="8" data-hw="23.9" data-hh="17.5" data-oy="9.5" class="net-node net-person" id="p-7" data-k="computational-biology data-science" data-rel="p-7 t-genomics t-bioinformatics p-5 p-6 p-0" data-rows="r-0 r-5 r-6 r-7" data-msg="<b>Saloma, Cynthia P.</b> · affiliate member · 2 specializations · 1 mentorship link · shares a term with Bagamasbad, Yu" tabindex="0" role="button" aria-label="Saloma, Cynthia P., affiliate member, 2 specialization areas, 1 mentorship links">
+          <circle class="hitarea" cx="997.7" cy="674.9" r="18"></circle>
+          <circle class="person-f" cx="997.7" cy="674.9" r="8"></circle>
+          <text class="person-label" x="997.7" y="697.9" text-anchor="middle">Saloma</text>
         </g>
         <g data-x="332.0" data-y="515.0" data-r="6" data-hw="23.9" data-hh="15.5" data-oy="9.5" class="net-node net-person" id="p-8" data-k="tourism-analytics knowledge-organization science-and-technology-policy" data-rel="p-8 t-tourism-analytics t-information-theory t-critical-data-studies p-0" data-rows="r-0 r-8" data-msg="<b>Dorado, Dan</b> · associate member · 3 specializations · 1 mentorship link" tabindex="0" role="button" aria-label="Dorado, Dan, associate member, 3 specialization areas, 1 mentorship links">
           <circle class="hitarea" cx="332.0" cy="515.0" r="18"></circle>
@@ -800,10 +802,10 @@ footer{
           <circle class="person-s" cx="350.0" cy="599.1" r="6"></circle>
           <text class="person-label" x="350.0" y="620.1" text-anchor="middle">Surmieda</text>
         </g>
-        <g data-x="997.7" data-y="674.9" data-r="4" data-hw="23.9" data-hh="13.5" data-oy="9.5" class="net-node net-person" id="p-14" data-k="computational-biology data-science" data-rel="p-14 t-cancer-genomics t-plco-datasets p-0" data-rows="r-0 r-14" data-msg="<b>Baylon, Carmina</b> · junior member · 2 specializations · 1 mentorship link" tabindex="0" role="button" aria-label="Baylon, Carmina, junior member, 2 specialization areas, 1 mentorship links">
-          <circle class="hitarea" cx="997.7" cy="674.9" r="18"></circle>
-          <circle class="person-s" cx="997.7" cy="674.9" r="4"></circle>
-          <text class="person-label" x="997.7" y="693.9" text-anchor="middle">Baylon</text>
+        <g data-x="700.0" data-y="787.0" data-r="4" data-hw="23.9" data-hh="13.5" data-oy="9.5" class="net-node net-person" id="p-14" data-k="computational-biology data-science" data-rel="p-14 t-cancer-genomics t-plco-datasets t-zooarchaeology p-3 p-0" data-rows="r-0 r-3 r-14" data-msg="<b>Baylon, Carmina</b> · junior member · 3 specializations · 1 mentorship link · shares a term with Rofes" tabindex="0" role="button" aria-label="Baylon, Carmina, junior member, 3 specialization areas, 1 mentorship links">
+          <circle class="hitarea" cx="700.0" cy="787.0" r="18"></circle>
+          <circle class="person-s" cx="700.0" cy="787.0" r="4"></circle>
+          <text class="person-label" x="700.0" y="806.0" text-anchor="middle">Baylon</text>
         </g>
         <g data-x="1068.0" data-y="515.0" data-r="4" data-hw="27.1" data-hh="13.5" data-oy="9.5" class="net-node net-person" id="p-15" data-k="data-science artificial-intelligence" data-rel="p-15 t-educational-datasets t-dithering-and-ml p-0" data-rows="r-0 r-15" data-msg="<b>Kikuchi, Ian Khristian</b> · junior member · 2 specializations · 1 mentorship link" tabindex="0" role="button" aria-label="Kikuchi, Ian Khristian, junior member, 2 specialization areas, 1 mentorship links">
           <circle class="hitarea" cx="1068.0" cy="515.0" r="18"></circle>
@@ -836,7 +838,7 @@ footer{
           <text class="person-label" x="813.7" y="243.3" text-anchor="middle">Lagman</text>
         </g>
       </svg>
-      <figcaption><span class="netkey"><i class="dot t"></i>Specialization area</span><span class="netkey"><i class="dot m5"></i>Core</span><span class="netkey"><i class="dot m4"></i>Affiliate</span><span class="netkey"><i class="dot m3"></i>Associate</span><span class="netkey"><i class="dot m2"></i>Junior</span><span class="netkey"><i class="ln m"></i>Mentorship</span><span class="netkey"><i class="ln s"></i>Specialization</span><br>20 mentorship links and 50 specialization edges over 64 nodes. Five terms appear for more than one member: <b>genomics</b> and <b>bioinformatics</b> (Bagamasbad, Yu, Saloma), <b>fMRI</b> and <b>brain mapping</b> (Bantang, Lagman), <b>hospitality analytics</b> (Montano, Matadling). One member holds each of the other 38. Mentorship runs through the leader, not through shared terms.</figcaption>
+      <figcaption><span class="netkey"><i class="dot t"></i>Specialization area</span><span class="netkey"><i class="dot m5"></i>Core</span><span class="netkey"><i class="dot m4"></i>Affiliate</span><span class="netkey"><i class="dot m3"></i>Associate</span><span class="netkey"><i class="dot m2"></i>Junior</span><span class="netkey"><i class="ln m"></i>Mentorship</span><span class="netkey"><i class="ln s"></i>Specialization</span><br>20 mentorship links and 51 specialization edges over 64 nodes. Six terms appear for more than one member: <b>genomics</b> and <b>bioinformatics</b> (Bagamasbad, Yu, Saloma), <b>fMRI</b> and <b>brain mapping</b> (Bantang, Lagman), <b>hospitality analytics</b> (Montano, Matadling), <b>zooarchaeology</b> (Rofes, Baylon). One member holds each of the other 37. Mentorship runs through the leader, not through shared terms.</figcaption>
     </figure>
   </section>
 
@@ -864,7 +866,7 @@ footer{
           <tr id="r-11" data-k="tourism-analytics" data-unit="HRIM"><td>Hije, Ma. Asuncion M.</td><td class="role">Associate</td><td>Assistant Professor, MS; PhD Global Hospitality Leadership (Univ. of Houston)</td><td class="unit">CHE HRIM</td><td class="spec">Blockchain in hospitality</td></tr>
           <tr id="r-12" data-k="knowledge-organization network-science science-and-technology-policy" data-unit="SLIS"><td>Isip, Jonathan</td><td class="role">Associate</td><td>Assistant Professor; PhD Data Science (student)</td><td class="unit">SLIS</td><td class="spec">Community archiving, collaboration networks, data privacy</td></tr>
           <tr id="r-13" data-k="knowledge-organization artificial-intelligence network-science" data-unit="SLIS"><td>Surmieda, Janny</td><td class="role">Associate</td><td>Assistant Professor; PhD Data Science (student)</td><td class="unit">SLIS</td><td class="spec">Knowledge organization, bibliometrics, topic modeling</td></tr>
-          <tr id="r-14" data-k="computational-biology data-science" data-unit="DS"><td>Baylon, Carmina</td><td class="role">Junior</td><td>PhD Data Science (student)</td><td class="unit">DS Program</td><td class="spec">Cancer genomics, PLCO datasets</td></tr>
+          <tr id="r-14" data-k="computational-biology data-science" data-unit="DS"><td>Baylon, Carmina</td><td class="role">Junior</td><td>PhD Data Science (student)</td><td class="unit">DS Program</td><td class="spec">Cancer genomics, PLCO datasets, zooarchaeology</td></tr>
           <tr id="r-15" data-k="data-science artificial-intelligence" data-unit="DS"><td>Kikuchi, Ian Khristian</td><td class="role">Junior</td><td>PhD Data Science (student); Dean, Malayan Colleges Laguna</td><td class="unit">DS Program</td><td class="spec">Educational datasets, dithering and ML</td></tr>
           <tr id="r-16" data-k="artificial-intelligence computational-biology network-science complex-systems" data-unit="DS"><td>Punzal, Chara</td><td class="role">Junior</td><td>PhD Data Science (candidate)</td><td class="unit">DS Program</td><td class="spec">ML for breast cancer NAC response, word networks, TDA</td></tr>
           <tr id="r-17" data-k="data-science" data-unit="DS"><td>Espanol, Rafael</td><td class="role">Junior</td><td>PhD Data Science (student)</td><td class="unit">DS Program</td><td class="spec">Sports data science</td></tr>
@@ -876,8 +878,113 @@ footer{
     </div>
   </section>
 
+  <section id="work">
+    <h2><span class="num">05</span>Current work</h2>
+    <p class="measure">Project repositories behind the four thrusts, with the leads named where a member carries one. Genomics and computational biology runs through the collaborating institutes rather than through this repository set, so it has no entry here yet.</p>
+
+    <h3 class="subhead">Tourism data science</h3>
+    <dl class="risks">
+      <div class="risk">
+        <dt>dot-tourism</dt>
+        <dd>Philippine tourism demand data from the Department of Tourism and allied statistical sources, with the tooling that parses, harmonises and analyses it.</dd>
+      </div>
+      <div class="risk">
+        <dt>transport-network</dt>
+        <dd>The Philippine multimodal transport network, covering road, ferry, air, rail and intercity bus, with fares, travel times, and the tools that build and analyse it.</dd>
+      </div>
+      <div class="risk">
+        <dt>mobility-data</dt>
+        <dd>Telco-derived origin-destination mobility tables for the Philippines. A data-first repository that the paper repositories consume as a submodule.</dd>
+      </div>
+      <div class="risk">
+        <dt>multimodal-access</dt>
+        <dd>Who can reach Philippine destinations? Multimodal access inequality in an archipelagic transport network.</dd>
+      </div>
+      <div class="risk">
+        <dt>national-maxent</dt>
+        <dd>A national destination-attractiveness surface at municipal resolution.</dd>
+      </div>
+      <div class="risk">
+        <dt>abm-recovery</dt>
+        <dd>Pre-pandemic baseline against observed recovery, a province-level MaxEnt on Philippine mobility.</dd>
+      </div>
+      <div class="risk">
+        <dt>palawan</dt>
+        <dd>Palawan destination choice from TPMS survey itineraries.</dd>
+      </div>
+      <div class="risk">
+        <dt>tourism-5A-drivers</dt>
+        <dd>What the 5As framework actually measures in administrative tourism data.</dd>
+      </div>
+      <div class="risk">
+        <dt>dive-pcssd</dt>
+        <dd>PCSSD dive tourism: accreditation analysis, establishment geocoding, survey findings and dashboards.</dd>
+      </div>
+      <div class="risk">
+        <dt>tra-tourism</dt>
+        <dd>Tourist Rest Area siting and road centrality in Siargao and Leyte. Lead: Punzal.</dd>
+      </div>
+      <div class="risk">
+        <dt>mutual-information-tourism</dt>
+        <dd>Mutual information in tourism data. Lead: Dorado.</dd>
+      </div>
+      <div class="risk">
+        <dt>abm-tourist</dt>
+        <dd>Agent-based tourist modelling. Lead: Montano.</dd>
+      </div>
+    </dl>
+
+    <h3 class="subhead">Complexity science</h3>
+    <dl class="risks">
+      <div class="risk">
+        <dt>knowledge-networks</dt>
+        <dd>Temporal knowledge-network analysis of the UP Diliman thesis and dissertation corpus, 1907 to 2024. Theses are nodes; edges join theses that share a subject heading, carry similar TF-IDF text, or have similar sentence embeddings. Built at yearly, five-year, decadal and moving-window granularities.</dd>
+      </div>
+      <div class="risk">
+        <dt>curriculum-networks</dt>
+        <dd>A toolkit and dataset collection that treats a degree program as a network: each course is a node and each prerequisite rule a directed edge. Sibling project to knowledge-networks. Lead: Kikuchi.</dd>
+      </div>
+      <div class="risk">
+        <dt>effective-mobility</dt>
+        <dd>Inverse SEIR on mobility data. Lead: Punzal.</dd>
+      </div>
+      <div class="risk">
+        <dt>basketball-tracking</dt>
+        <dd>Sports data science on tracking data. Lead: Espa&ntilde;ol.</dd>
+      </div>
+    </dl>
+
+    <h3 class="subhead">Bioacoustics and zooarchaeology</h3>
+    <dl class="risks">
+      <div class="risk">
+        <dt>urban-bird-songs</dt>
+        <dd>Passive acoustic monitoring of the National Science Complex soundscape at UP Diliman, an urban green space in Metro Manila. Low-cost recorders, a USB microphone on a Raspberry Pi, ran continuously in the field for over a year. Lead: Surmieda.</dd>
+      </div>
+      <div class="risk">
+        <dt>ml-bones-3-non-ph</dt>
+        <dd>Machine learning on faunal remains outside the Philippines. Lead: Baylon.</dd>
+      </div>
+    </dl>
+
+    <h3 class="subhead">Science and technology policy</h3>
+    <dl class="risks">
+      <div class="risk">
+        <dt>ai-supply-chain</dt>
+        <dd>Research notes, data and tooling on the AI hardware supply chain and its geopolitical linkages.</dd>
+      </div>
+      <div class="risk">
+        <dt>pax-silica-neocolonial</dt>
+        <dd>Journal manuscript on Pax Silica and FDI-led underdevelopment in the Philippines, with an asymmetric-conditionality instrument series covering 1909 to 2026.</dd>
+      </div>
+      <div class="risk">
+        <dt>climate-food-resilience</dt>
+        <dd>Climate and food resilience, drawing on MASIPAG materials and OpenStreetMap spatial data for the Philippines.</dd>
+      </div>
+    </dl>
+  </section>
+
   <section id="roadmap">
-    <h2><span class="num">05</span>Six-year impact roadmap</h2>
+    <h2><span class="num">06</span>Six-year impact roadmap</h2>
     <p class="measure">Four thematic groups share computational infrastructure, weekly cross-group seminars, and structured co-mentorship. Grants from DOST, CHED, and industry pay for infrastructure and student support.</p>
 
     <ol class="roadmap">
@@ -905,7 +1012,7 @@ footer{
   </section>
 
   <section id="risks">
-    <h2><span class="num">06</span>Risks and how they are managed</h2>
+    <h2><span class="num">07</span>Risks and how they are managed</h2>
     <dl class="risks">
       <div class="risk">
         <dt>Student recruitment bottlenecks</dt>
@@ -927,7 +1034,7 @@ footer{
   </section>
 
   <section id="keywords">
-    <h2><span class="num">07</span>Thematic keywords</h2>
+    <h2><span class="num">08</span>Thematic keywords</h2>
     <p class="measure">Aligned with recognized international taxonomies. The primary keyword generates the program's official address. Select one to highlight the members working in it and their specialization areas.</p>
     <ul class="keys">
       <li><button type="button" class="key primary" data-k="complex-systems" aria-pressed="false">Complex systems</button></li>
